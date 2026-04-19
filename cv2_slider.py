@@ -22,11 +22,11 @@ class Cv2Slider:
         # nielinejnosc
         self.nonlinear_factor = float(nonlinear_factor)
         self.precision_switch = precision_switch
-        self.step = None if step is None else float(step)  # если None — отключено
+        self.step = None if step is None else float(step)
 
-        self._initial_value = float(value)  # исходное значение, отображаемое над кружком
-        self._value = self._inverse_nonlinear(value)  # позиция круга соответствует нелинейной шкале
-        self._moved = False  # признак, что слайдер двигают
+        self._initial_value = float(value)
+        self._value = self._inverse_nonlinear(value)
+        self._moved = False
 
         # grafika
         self.font = cv2.FONT_HERSHEY_SIMPLEX
@@ -60,8 +60,8 @@ class Cv2Slider:
         return self._apply_step(t)
 
     def reset_value(self, display_value):
-        self._initial_value = float(display_value)         # текст над кружком
-        self._value = self._inverse_nonlinear(display_value)  # позиция круга
+        self._initial_value = float(display_value)   
+        self._value = self._inverse_nonlinear(display_value) 
         self._moved = False
         
     @value.setter
@@ -69,7 +69,7 @@ class Cv2Slider:
         v = float(v)
         denom = (self.max_val - self.min_val) or 1e-6
         self._value = np.clip(v, self.min_val, self.max_val)
-        self._moved = True  # любое присвоение считается движением
+        self._moved = True
 
     def get_time_value(self):
         denom = (self.max_val - self.min_val) or 1e-6

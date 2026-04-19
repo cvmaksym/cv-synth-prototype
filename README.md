@@ -1,13 +1,34 @@
-# Computer Vision MIDI Controller
+# Gesture-Controlled MIDI Synth & Waveform Shaper
 
-A prototype of a gesture-controlled MIDI synthesizer. It uses a camera to track hands, allowing for touchless music synthesis and real-time waveform shaping.
+A functional prototype of a touchless MIDI synthesizer powered by Computer Vision. This project allows users to interact with a digital synthesizer in 3-dimensional space, using hand gestures to trigger notes and manipulate sound parameters in real-time.
 
 ## 📺 Project Demo
-Watch the video below to see (and hear) the project in action:
+Watch the system in action (includes audio):
 
-[Click here to play the demo video](https://github.com/cvmaksym/cv-synth-prototype/blob/main/demo.mp4?raw=true)
+<video src="https://github.com/cvmaksym/cv-synth-prototype/raw/main/demo.mp4" width="100%" controls>
+  Your browser does not support the video tag.
+</video>
+
+> [!NOTE]
+> If the video player above does not load, you can [download the demo file directly here](https://github.com/cvmaksym/cv-synth-prototype/raw/main/demo.mp4).
+
+## 🌟 Key Features
+
+* **Real-time Waveform Shaping:** The core innovation — an algorithm that analyzes hand contours to dynamically change the oscillator's shape (Sine, Saw, Triangle) on the fly.
+* **Touchless Parameter Control:** Full control over ADSR envelope (Attack, Decay, Sustain, Release), Pitch, and Legato by tracking hand coordinates.
+* **Gesture-Based UI:** A custom-built interface featuring "hover-and-hold" mechanics, allowing for full system navigation without physical contact.
+* **High Performance:** Optimized Python pipeline to ensure low-latency interaction between video processing and MIDI output.
 
 ## 🛠 Tech Stack
-* Python
-* OpenCV & NumPy
-* MIDI synthesis
+
+* **Language:** Python
+* **Computer Vision:** OpenCV, NumPy (Contour detection, Bounding box analysis)
+* **Audio/MIDI:** MIDI protocol integration (Mido)
+* **Architecture:** Modular design with separate processors for hand tracking, GUI rendering, and audio synthesis.
+
+## ⚙️ Installation
+
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt

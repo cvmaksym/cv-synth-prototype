@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/595ef16c-22d1-462e-8472-c7c881824357
 > [!NOTE]
 > If the video player above does not load, you can [download the demo file directly here](https://github.com/cvmaksym/cv-synth-prototype/raw/main/demo.mp4).
 
-> [!TIP]> **[Watch the full 1:49 technical demonstration with audio here](https://www.youtube.com/watch?v=NSA6_2gZqa0)**
+>  **[Watch the full 1:49 technical demonstration with audio here](https://www.youtube.com/watch?v=NSA6_2gZqa0)**
 
 ## 🌟 Key Features
 

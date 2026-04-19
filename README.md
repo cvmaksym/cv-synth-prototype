@@ -5,9 +5,7 @@ A functional prototype of a touchless MIDI synthesizer powered by Computer Visio
 ## 📺 Project Demo
 Watch the system in action (includes audio):
 
-<video src="https://github.com/cvmaksym/cv-synth-prototype/raw/main/demo.mp4" width="100%" controls>
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/595ef16c-22d1-462e-8472-c7c881824357
 
 > [!NOTE]
 > If the video player above does not load, you can [download the demo file directly here](https://github.com/cvmaksym/cv-synth-prototype/raw/main/demo.mp4).

@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/595ef16c-22d1-462e-8472-c7c881824357
 
 ## 🌟 Key Features
 
-* **Real-time Waveform Shaping:** The core innovation — an algorithm that analyzes hand contours to dynamically change the oscillator's shape (Sine, Saw, Triangle) on the fly.
+* **Real-time Waveform Shaping:** The core innovation - an algorithm that analyzes hand contours to dynamically change the oscillator's shape (Sine, Saw, Triangle) on the fly.
 * **Touchless Parameter Control:** Full control over ADSR envelope (Attack, Decay, Sustain, Release), Pitch, and Legato by tracking hand coordinates.
 * **Gesture-Based UI:** A custom-built interface featuring "hover-and-hold" mechanics, allowing for full system navigation without physical contact.
 * **High Performance:** Optimized Python pipeline to ensure low-latency interaction between video processing and MIDI output.

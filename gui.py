@@ -1054,9 +1054,9 @@ class MidiControllerGUI:
         self.phase_random_state = "off"
         
         # treking rak
-        self.last_fingers_pos = None  # Здесь будем хранить позицию из прошлого кадра
-        self.still_timer = None       # Таймер неподвижности
-        self.fingers_are_still = False  # Флаг: замерли пальцы или нет
+        self.last_fingers_pos = None  
+        self.still_timer = None       
+        self.fingers_are_still = False 
         
         # punkty domyslne
         self.current_hand_points = [(0, 0.0), (1023, 0.0)]
@@ -1447,7 +1447,7 @@ class MidiControllerGUI:
             """
 
             Dalej dla release itd, wsm jak i dla wszystkich przyciskow logika prawie sie nie rozni, kopi past,
-            jak bede dorabiac ten project zrobie osobna klase, bo przez to ze nie wiedzialem jak tego bedzie duzo juz dorobilem jak zaczelem
+            jak bede dorabiac ten project trzeba zrobic osobna klase
 
             """
 
@@ -1609,11 +1609,11 @@ class MidiControllerGUI:
                         self.play_button.label = "play"
                         if self.player is not None:
                             self.player.stop()
-                    self.timer_start = None  # сброс ТОЛЬКО после срабатывания
+                    self.timer_start = None  
             else:
                 if not self.hand_control:
                     self.play_button.alpha = 0.6
-                self.timer_start = None  # палец ушёл — сброс
+                self.timer_start = None 
             
             # Wave
             if in_wave_button_zone and self.midi_state == "off":
@@ -1808,7 +1808,7 @@ class MidiControllerGUI:
                 else:
                     self.timer_wave_type_sine = None
             else:
-                self.wave_settings_wave_type_sine_button.alpha = 1.0  # Активная всегда яркая
+                self.wave_settings_wave_type_sine_button.alpha = 1.0 
                 self.timer_wave_type_sine = None
 
             # --- SQUARE ---
